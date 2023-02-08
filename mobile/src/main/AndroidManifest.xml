@@ -222,6 +222,12 @@
                 <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
             </intent-filter>
         </receiver>
+        <receiver android:name=".MyBroadcastReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="be.mygod.vpnhotspot.BT_TETHER_START" />
+                <action android:name="be.mygod.vpnhotspot.BT_TETHER_STOP" />
+            </intent-filter>
+        </receiver>
 
         <provider
             android:name="androidx.core.content.FileProvider"
